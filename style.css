@@ -22,7 +22,7 @@ body{
     display: flex;
     justify-content: center;
     color: hwb(204 78% 0%);
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Montserrat';
     font-weight: 675;
     transform: scaleY(1.1);
