@@ -12,10 +12,10 @@
     <div class="home">
         <header id="header" class="boxshadow">
             <div class="header_name_pic"><img src="assets/profile_pic.jpg" alt="Image here" class="pfp"/></div>
-            <ul>    
-                <a id="button" href="#Home" class="links">Home</a>
-                <a id="button" href="#Projects" class="links">Projects</a>
-                <a id="button" href="#Contact" class="links">Contact</a>
+            <ul style="display: flex; margin: 0; padding: 0; gap: 3vmin;">    
+                <a id="button" href="#Home" class="links" style="font-size: 2vmin;">Home</a>
+                <a id="button" href="#Projects" class="links" style="font-size: 2vmin;">Projects</a>
+                <a id="button" href="#Contact" class="links" style="font-size: 2vmin;">Contact</a>
             </ul>
         </header>
 
@@ -26,7 +26,7 @@
         <div class="about">
             <div class="pic_links">
                 <div class="card">
-                    <img src="assets/profile_pic.jpg" alt="Image here" style="width: clamp(70px, 200px, 300px); height: clamp(70px, 200px, 300px); border-radius: 50%; z-index: 2;"/>
+                    <img src="assets/profile_pic.jpg" alt="Image here" style="width: 200px; height: 200px; border-radius: 50%; z-index: 2;"/>
                 </div>
                 
                 <!-- fix this -->
@@ -35,7 +35,7 @@
                     Winnipeg, MB
                 </div>
         
-                <ul>
+                <ul style="display: flex; margin: 0; padding: 0; gap: 25px;">
                     <a id="button" href="https://www.linkedin.com/in/arshdeep-singh-karwal" class="links" target="_blank" rel="noreferrer noopener">
                         <img src="assets/linkedin.svg" width="32px" height="32px" alt="LinkedIn">
                     </a>
@@ -82,8 +82,27 @@
                 Education
             </button>
         </div>
+        <div class="tab_panel">
+            <ul style="margin: 0 0 0 50px; border-left: 1px solid rgba(193, 243, 252, 0.541); height: inherit;">
+                <li class="tab_info" style="list-style: none;">
+                    <div class="position_logo"><img class="logos" src="assets/uofm_logo.png"></div>
+                    University of Manitoba
+                </li>
+                <li style="list-style: none;">
+                    
+                </li>
+            </ul>
+        </div>
     </div>
-    
+
+    <div style="border-bottom: 1px solid rgba(255, 255, 255, 0.185);"></div>
+
+    <div class="projects">
+        <div class="name_tag" style="font-size: 25px; justify-content: left; font-weight: 400; padding-bottom: 10px;">
+            Projects
+        </div>
+
+    </div>
     
 </body>
 </html>
