@@ -23,7 +23,7 @@ body{
     justify-content: center;
     color: hwb(204 78% 0%);
     /* font-size: 1vmax; */
-    font-size: 4.3vmin;
+    font-size: 5vmin;
     font-family: 'Montserrat';
     font-weight: 675;
     transform: scaleY(1.1);
