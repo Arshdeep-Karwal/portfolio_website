@@ -9,6 +9,12 @@ body{
     src: url(assets/Montserrat-VariableFont_wght.ttf);
 }
 
+/* @media only screen and (max-width: 500px) {
+    .name_tag{
+        font-size: 30px;
+    }
+ } */
+
 .container{
     width: auto;
     height: 2000px;
@@ -22,8 +28,7 @@ body{
     display: flex;
     justify-content: center;
     color: hwb(204 78% 0%);
-    font-size: 3.5vmax;
-    /* font-size: 5vmin; */
+    font-size: clamp(2.188rem, 3vw + 1rem, 3.125rem);
     font-family: 'Montserrat';
     font-weight: 675;
     transform: scaleY(1.1);
@@ -57,8 +62,8 @@ body{
 } */
 
 .pfp{
-    width: 5.5vmin;
-    height: 5.5vmin;
+    width: clamp(1.875rem, 4vw + 0.25rem, 2.813rem);
+    height: clamp(1.875rem, 4vw + 0.25rem, 2.813rem);
     border-radius: 50%;
 }
 
@@ -156,7 +161,7 @@ p{
     max-width: 400px;
     color: rgba(255, 255, 255, 0.753);
     line-height: 25px;
-    font-size: 15px;
+    font-size: clamp(0.875rem, 2vw, 1.125rem);
     font-weight: 450;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -230,7 +235,7 @@ p{
 
 .exp_buttons{
     color: rgba(255, 255, 255, 0.966);
-    font-size: 15px;
+    font-size: clamp(0.75rem, 1vw + 0.20rem, 0.938rem);;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
     background-color: rgb(0, 0, 97);
@@ -263,22 +268,23 @@ p{
 }
 
 .tab_title{
-    font-size: 15px;
+    font-size: clamp(0.875rem, 1vw + 0.5rem, 1.188rem);
     font-weight: 600;
     color: white;
 }
 
 .tab_sub_title{
-    font-size: 11px;
+    font-size: clamp(0.625rem, 1vw + 0.25rem, 0.875rem);
     color: rgba(255, 255, 255, 0.753);
 }
 
 .tab_desc{
-    font-size: 12px;
+    font-size: clamp(0.625rem, 1vw + 0.25rem, 0.844rem);
     color: rgba(255, 255, 255, 0.904);
     list-style-type: '- ';
-    line-height: 19px;
+    line-height: clamp(0.906rem, 1vw + 0.55rem, 1.219rem);
     font-weight: 490;
+    padding-inline-start: 20px;
 }
 
 .logos{
