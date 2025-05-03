@@ -28,7 +28,7 @@ body{
     display: flex;
     justify-content: center;
     color: hwb(204 78% 0%);
-    font-size: clamp(2.188rem, 3vw + 1rem, 3.125rem);
+    font-size: clamp(2.1rem, 3vw + 1rem, 3rem);
     font-family: 'Montserrat';
     font-weight: 675;
     transform: scaleY(1.1);
