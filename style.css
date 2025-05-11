@@ -9,18 +9,71 @@ body{
     src: url(assets/Montserrat-VariableFont_wght.ttf);
 }
 
-/* @media only screen and (max-width: 560px) {
+@media only screen and (max-width: 650px) {
 
-    header ul{
-        position: fixed;
-        background-color: rgb(9, 3, 46);
-        top: 10px;
-        right: 0;
-        width: 60px;
+    .links_container{
         flex-direction: column;
-        padding: 10rem;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 250px;
+        background-color: rgba(4, 0, 19, 0.897);
+        transition: 0.5s ease-out;
     }
- } */
+
+    header ul a{
+        box-sizing: border-box;
+        height: auto;
+        padding: 13px 0;
+    }
+
+    .open-sidebar-button, .close-sidebar-button{
+        display: block!important;
+    }
+
+    .close-sidebar-button{
+        padding-top: 15px;
+        padding-right: 20px;
+        align-self: flex-end;
+    }
+
+    #sidebar_active:checked ~ .links_container{
+        right: 0;
+    }
+
+    #sidebar_active:checked ~ #overlay{
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+}
+
+#sidebar_active, #overlay{
+    display: none;
+}
+
+/* #side_button{
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+#side_button:hover{
+    cursor: pointer;
+} */
+
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+}
+
+.open-sidebar-button:hover, .close-sidebar-button:hover{
+    cursor: pointer;
+}
 
 .container{
     width: auto;
@@ -52,11 +105,33 @@ header{
     z-index: 2;
 }
 
-header ul{
-    display: flex; 
+/* header ul{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 25px;
     margin: 0; 
-    padding: 0; 
-    gap: 3vmin;
+    height: 70%;
+} */
+
+.links_container{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 25px;
+    margin: 0; 
+    height: 70%;
+}
+
+header ul a{
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+header ul a:hover{
+    text-decoration: underline;
 }
 
 .pfp{
@@ -82,7 +157,6 @@ header ul{
     background-color: transparent;
     border-color: transparent;
     border-radius: 15px;
-    padding: 0;
     z-index: 1;
     cursor: pointer;
     position: relative;
@@ -92,7 +166,7 @@ header ul{
     content: '';
     position: absolute;
     z-index: -1;
-    padding: 4px;
+    padding: 3px;
     width: 100%;
     height: 100%;
     background-image: linear-gradient(45deg, blue, red);
