@@ -59,14 +59,19 @@ body{
     background-color: rgb(4, 0, 19)
 }
 
-button {
+button{
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-a {
+a{
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+label{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /* HEADER */
