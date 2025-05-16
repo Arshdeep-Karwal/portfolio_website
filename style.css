@@ -106,9 +106,8 @@ header ul a:hover{
 }
 
 .pfp{
-    width: clamp(1.875rem, 4vw + 0.25rem, 2.813rem);
-    height: clamp(1.875rem, 4vw + 0.25rem, 2.813rem);
-    border-radius: 50%;
+    width: clamp(2.813rem, 3vw + 1.75rem, 3.75rem);
+    height: clamp(1.5rem, 1vw + 1rem, 2rem);
 }
 
 .links_container{

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arshdeep Singh Karwal</title>
+    <link rel="icon" type="image/x-icon" href="assets/website_favicon.ico">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="header_name_pic"><img src="assets/profile_pic.jpg" alt="Profile_Picture" class="pfp"/></div>
+        <div class="header_name_pic"><img src="assets/logo-no-background.png" alt="Header_Logo" class="pfp"/></div>
         
         <input type="checkbox" id="sidebar_active">
         
@@ -185,7 +186,8 @@
 
                 <ul class="tab_desc">
                     <li>This is my personal portfolio where I showcase my experience, projects, and skills.</li> 
-                    <li>I learnt the essentials of web-design such as links, buttons, forms, and tab-panels blended in using front-end styling with CSS.</li>
+                    <li>I learnt the essentials of web-design such as links, buttons, forms with PHP, and tab-panels blended in using front-end styling with CSS.</li>
+                    <li>The website is designed to be responsive; meaning it adapts based on the viewing device.</li>
                 </ul>
                 
                 <div class="tab_desc" style="padding: 0;">Tech Stack Used:</div>
@@ -194,6 +196,7 @@
                     <div class="tech_stack">HTML</div>
                     <div class="tech_stack">CSS</div>
                     <div class="tech_stack">JavaScript</div>
+                    <div class="tech_stack">PHP</div>
                 </div>
             </div>
         </div>
@@ -211,12 +214,12 @@
         </div>
 
         <form style="display: flex; flex-direction: column;">
-            <input type="text" placeholder="Name" class="form_box" style="margin-top: 20px;">
-            <input type="email" placeholder="Email Address" class="form_box">
-            <textarea type="text" placeholder="Message" rows="5" class="form_box"></textarea> 
+            <input type="text" placeholder="Name" class="form_box" style="margin-top: 20px;" required>
+            <input type="email" placeholder="Email Address" class="form_box" required>
+            <textarea type="text" placeholder="Message" rows="5" class="form_box" required></textarea> 
 
             <div style="display: flex; justify-content: center;">
-                <button id="button" style="width: clamp(35px, 25vw, 200px); margin-top: 20px;">
+                <button id="button" type="submit" style="width: clamp(35px, 25vw, 200px); margin-top: 20px;">
                     <div class="btn" style="font-size: clamp(0.7rem, 1vw + 0.35rem, 1rem);">Submit</div>
                 </button>
             </div>
