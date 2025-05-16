@@ -59,6 +59,16 @@ body{
     background-color: rgb(4, 0, 19)
 }
 
+button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 /* HEADER */
 
 .container{
@@ -388,10 +398,23 @@ p{
     flex-direction: column;
     padding: 15px;
     min-width: 230px;
-    gap: clamp(0.563rem, 1vw + 0.25rem, 1.2rem);
+    gap: clamp(0.5rem, 1vw + 0.25rem, 1.2rem);
     justify-content: space-between;
+    background-color: rgba(15, 7, 68, 0.303);
     border: 1px solid rgba(193, 243, 252, 0.541);
     border-radius: 7px;
+}
+
+.tech_stack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 25, 161);
+    height: 10px;
+    width: fit-content;
+    font-size: clamp(0.625rem, 1vw + 0.25rem, 0.7rem);
+    padding: clamp(0.3rem, 1vw + 0.15rem, 0.5rem);
+    border-radius: 5px;
 }
 
 /* CONTACT SECTION */
