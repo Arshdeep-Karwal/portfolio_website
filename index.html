@@ -59,14 +59,14 @@
             </ul>
 
             <a href="Arshdeep Karwal - UofM Comp. Eng. - Resume.pdf" target="_blank" rel="noreferrer noopener" style="text-decoration: none;">
-                    <button id="button">
-                        <div class="btn">
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 50 50"><path d="M 30.398438 2 L 7 2 L 7 48 L 43 48 L 43 14.601563 Z M 15 28 L 31 28 L 31 30 L 15 30 Z M 35 36 L 15 36 L 15 34 L 35 34 Z M 35 24 L 15 24 L 15 22 L 35 22 Z M 30 15 L 30 4.398438 L 40.601563 15 Z" fill="#ffff"></path></svg>
-                            </div>
-                            <div>Resume</div>
+                <button id="button">
+                    <div class="btn">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 50 50"><path d="M 30.398438 2 L 7 2 L 7 48 L 43 48 L 43 14.601563 Z M 15 28 L 31 28 L 31 30 L 15 30 Z M 35 36 L 15 36 L 15 34 L 35 34 Z M 35 24 L 15 24 L 15 22 L 35 22 Z M 30 15 L 30 4.398438 L 40.601563 15 Z" fill="#ffff"></path></svg>
                         </div>
-                    </button>
+                        <div>Resume</div>
+                    </div>
+                </button>
             </a>
             
             
@@ -86,7 +86,7 @@
     <div style="border-bottom: 1px solid rgba(91, 79, 255, 0.301);"></div>
     
 
-    <div id="Experience" class="experience">
+    <div id="Experience" class="section_container">
         <div class="name_tag" style="font-size: 25px; justify-content: left; font-weight: 400; padding-bottom: 10px;">
             Experience
         </div>
@@ -152,7 +152,7 @@
 
     <div style="border-bottom: 1px solid rgba(91, 79, 255, 0.301);"></div>
 
-<!--     <div id="Projects" class="projects">
+    <div id="Projects" class="section_container">
         <div class="name_tag" style="font-size: 25px; justify-content: left; font-weight: 400; padding-bottom: 10px;">
             Projects
         </div>
@@ -160,20 +160,53 @@
         <div class="project_list">
             <div class="project_panel" id="project_1">
                 <div class="tab_title">Automated Waste Sorting System</div>
+                
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <img src="assets/project_group_pic.jpg" style="width: inherit; height: 9rem; border-radius: 10px;">
+                </div>
+                
+                <ul class="tab_desc">
+                    <li>Developed a fully automated waste sorting system using an Arduino UNO and various motors and sensors.</li> 
+                    <li>Created a functional program in the Arduino IDE using C++ through debugging and timing the motors and sensors cohesively.</li>
+                </ul>
+                
+                <div class="tab_desc" style="padding: 0;">Tech Stack Used:</div>
             </div>
 
             <div class="project_panel" id="project_2">
                 <div class="tab_title">Personal Portfolio</div>
+                <ul class="tab_desc">
+                    <li>This is my personal portfolio where I showcase my experience, projects, and skills.</li> 
+                    <li>I learnt the essentials of web-design such as links, buttons, forms, and tab-panels blended in using front-end styling using CSS.</li>
+                </ul>
+                <div class="tab_desc" style="padding: 0;">Tech Stack Used:</div>
             </div>
         </div>
     </div>
 
-    <div style="border-bottom: 1px solid rgba(91, 79, 255, 0.301);"></div> -->
+    <div style="border-bottom: 1px solid rgba(91, 79, 255, 0.301);"></div>
 
-    <div id="Contact" class="projects">
-        <div class="name_tag" style="font-size: 25px; justify-content: left; font-weight: 400; padding-bottom: 10px;">
+    <div id="Contact" class="section_container">
+        <div class="name_tag" style="font-size: 25px; justify-content: left; font-weight: 400;">
             Contact
         </div>
+        
+        <div class="tab_desc" style="padding: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+            You can contact me by filling out the form below. Thank you!
+        </div>
+
+        <form style="display: flex; flex-direction: column;">
+            <input type="text" placeholder="Name" class="form_box" style="margin-top: 20px;">
+            <input type="email" placeholder="Email Address" class="form_box">
+            <textarea type="text" placeholder="Message" rows="5" class="form_box"></textarea> 
+
+            <div style="display: flex; justify-content: center;">
+                <button id="button" style="width: clamp(20px, 25vw, 200px); margin-top: 20px;">
+                    <div class="btn" style="font-size: clamp(0.75rem, 1vw + 0.35rem, 1rem);">Submit</div>
+                </button>
+            </div>
+        </form>
+
     </div>
 
     <div style="border-bottom: 1px solid rgba(91, 79, 255, 0.301);"></div>
