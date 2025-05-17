@@ -28,6 +28,10 @@
         font-size: 13.5px!important;
     }
 
+    header ul a:hover{
+        text-decoration: none!important;
+    }
+
     .open-sidebar-button, .close-sidebar-button{
         display: block!important;
     }
