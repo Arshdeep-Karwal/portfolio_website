@@ -16,7 +16,7 @@
         top: 0;
         right: -100%;
         z-index: 10;
-        width: 250px;
+        width: 225px;
         background-color: rgba(4, 0, 19, 0.897);
         transition: 0.5s ease-out;
     }
@@ -25,6 +25,7 @@
         box-sizing: border-box;
         height: auto;
         padding: 13px 0;
+        font-size: 13.5px!important;
     }
 
     .open-sidebar-button, .close-sidebar-button{
@@ -74,14 +75,14 @@ label{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* HEADER */
-
 .container{
     width: auto;
     height: 2000px;
     box-sizing: border-box;
     background-color: rgb(4, 0, 19);
 }
+
+/* HEADER */
 
 header{
     display: flex;
@@ -128,6 +129,24 @@ header ul a:hover{
 
 .links:hover{
     text-decoration: underline;
+}
+
+/* RETURN TO TOP BUTTON */
+
+.back_to_top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 2px;
+    height: clamp(32px, 3vw, 70px);
+    width: clamp(32px, 3vw, 70px);
+    top: 75%;
+    right: 0;
+    z-index: 10px;
+    background-color: rgb(9, 3, 46);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 /* SIDEBAR */
