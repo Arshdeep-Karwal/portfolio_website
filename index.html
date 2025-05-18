@@ -221,17 +221,29 @@
             You can contact me by filling out the form below. Thank you!
         </div>
 
-        <form name="contact_form" action="" style="display: flex; flex-direction: column;">
+        <form id="contact_form" method="post" action="https://formspree.io/f/mdkgbqqa" style="display: flex; flex-direction: column;">
             <input type="text" name="name" placeholder="Name" class="form_box" style="margin-top: 20px;" required>
             <input type="email" name="email" placeholder="Email Address" class="form_box" required>
             <textarea type="text" name="message" placeholder="Message" rows="5" class="form_box" required></textarea> 
 
             <div style="display: flex; justify-content: center;">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#Top">
                 <button id="button" type="submit" value="Submit" style="width: clamp(35px, 25vw, 200px); margin-top: 20px;">
                     <div class="btn" style="font-size: clamp(0.7rem, 1vw + 0.35rem, 1rem);">Submit</div>
                 </button>
             </div>
+
+            <div id="thank_you_message" class="form_message">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="hwb(214 53% 2%)"><path d="M480-360q17 0 28.5-11.5T520-400q0-17-11.5-28.5T480-440q-17 0-28.5 11.5T440-400q0 17 11.5 28.5T480-360Zm-40-160h80v-240h-80v240ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+                <div>Thank you for your message! I will get back to you soon.</div>
+            </div>
+            
+            <div id="error_message" class="form_message">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="hwb(214 53% 2%)"><path d="M480-360q17 0 28.5-11.5T520-400q0-17-11.5-28.5T480-440q-17 0-28.5 11.5T440-400q0 17 11.5 28.5T480-360Zm-40-160h80v-240h-80v240ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg>
+                <div>Oops! There was an error sending your message. Please try again later.</div>
+            </div>
         </form>
+        
     </div>
 
     <div style="border-bottom: 1px solid rgba(91, 79, 255, 0.301);"></div>
