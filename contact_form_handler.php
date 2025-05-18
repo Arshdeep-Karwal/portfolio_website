@@ -12,29 +12,33 @@ if(
     $errors .= "\n Error: all fields are required";
 }
 
-$name = $_POST['name'];
-$email_address = $_POST['email'];
-$message = $_POST['message'];
+$name = $_POST['name'] ?? null;
+$email_address = $_POST['email'] ?? null;
+$message = $_POST['message'] ?? null;
 
-if(
-    !preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", $email_address))
-{
-    $errors .= "\n Error: Invalid email address";
-}
+// if(
+//     !preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", $email_address))
+// {
+//     $errors .= "\n Error: Invalid email address";
+// }
 
 if(empty($errors))
 {
-$to = $myemail;
+$to_email = $myemail;
 $email_subject = "Contact form submission: $name";
-$email_body = "You have received a new message. ".
-" Here are the details:\n Name: $name \n ".
-"Email: $email_address\n Message \n $message";
+$email_body = "You have received a new message. Here are the details:\n
+Name: $name
+Email: $email_address\n
+Message: \n$message";
 
 $headers = "From: $myemail\n";
-$headers .= "Reply-To: $email_address";
 
-mail($to, $email_subject, $email_body, $headers);
-header('Location: '.$_SERVER['PHP_SELF']);
-exit;
+if(mail($to_email, $email_subject, $email_body, $headers)){
+    header("Location: " . "http://" . $_SERVER['HTTP_HOST'] . $location);
+    exit;
+}
+else{
+    echo "Email sending failed...";
+}
 }
 ?>
