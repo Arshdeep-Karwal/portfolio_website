@@ -3,7 +3,7 @@
 @font-face {
     font-family: 'Montserrat';
     font-optical-sizing: auto;
-    src: url(assets/Montserrat-VariableFont_wght.ttf);
+    src: url(assets/fonts/Montserrat-VariableFont_wght.ttf);
 }
 
 /* MOBILE COMPATIBILITY */
@@ -86,6 +86,13 @@ label{
     background-color: rgb(4, 0, 19);
 }
 
+@keyframes fade_in{
+    0% {opacity: 0;}
+    50% {opacity: 0.4;}
+    100% {opacity: 1;}
+    
+}
+
 /* HEADER */
 
 header{
@@ -97,6 +104,7 @@ header{
     padding: 20px clamp(1.25rem, 1vw + 1rem, 3.125rem);
     background-color: rgb(9, 3, 46);
     z-index: 2;
+    animation: fade_in 1s ease-out;
 }
 
 header ul a{
@@ -151,6 +159,7 @@ header ul a:hover{
     background-color: rgb(9, 3, 46);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    animation: fade_in 1s ease-out;
 }
 
 /* SIDEBAR */
@@ -170,7 +179,7 @@ header ul a:hover{
 /* NAME TAG */
 
 .name_tag{
-    padding: 65px 0px 0px 0px;
+    padding: clamp(2.5rem, 2vw + 2rem, 4.063rem) 0px 0px 0px;
     display: flex;
     justify-content: center;
     color: hwb(204 78% 0%);
@@ -178,7 +187,9 @@ header ul a:hover{
     font-family: 'Montserrat';
     font-weight: 675;
     transform: scaleY(1.1);
+    animation: fade_in 2s ease-out;
 }
+
 
 /* BUTTON GLOWING ANIMATION */
 
@@ -251,6 +262,12 @@ header ul a:hover{
     max-width: 800px;
     gap: 6vw;
     justify-content: center;
+    animation: about_load 1s ease-out;
+}
+
+@keyframes about_load{
+    0%{transform: translateY(-15%); opacity: 0;}
+    100%{transform: translateY(0); opacity: 1;}
 }
 
 p{
@@ -436,6 +453,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
     background-color: rgb(43, 25, 161);
     height: 10px;
     width: fit-content;

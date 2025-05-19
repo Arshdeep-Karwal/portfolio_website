@@ -33,19 +33,21 @@ function changeTabs(e) {
         .removeAttribute("hidden");
 }
 
-// Contact form script 
-
+// Contact form script (sent to formspree.io) 
 document.addEventListener('DOMContentLoaded', function() {
+    
+    // Variables to find elements by ID
     const contactForm = document.getElementById('contact_form');
     const thankYouMessage = document.getElementById('thank_you_message');
     const errorMessage = document.getElementById('error_message');
 
-    contactForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
+    // Prevent the default form submission loading page (occurs on submit)
+    contactForm.addEventListener('submit', 
+        function(event) {
+        event.preventDefault(); 
 
+        // Parses form data
         const formData = new FormData(contactForm);
-        thankYouMessage.style.display = 'none';
-        errorMessage.style.display = 'none';
 
         fetch(contactForm.action, {
             method: 'POST',
@@ -54,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'Accept': 'application/json' // Expect JSON response
             }
         })
-        .then(response => response.json())
+        .then(response => response.json()) // Occurs after the fetch succeeds
             .then(data => {
                 if (data.ok) { // Formspree sends { ok: "success" } on success
                 thankYouMessage.style.display = 'flex'; // Show the thank you message
@@ -67,16 +69,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 } else {
                 console.error('Formspree error:', data);
-                errorMessage.style.display = 'flex';
+                errorMessage.style.display = 'flex'; // Show the error message
 
+                // Reset the message after a few seconds
                 setTimeout(() => {
                     errorMessage.style.display = 'none';
                 }, 6000);
                 }
             })
-        .catch(error => {
+        .catch(error => {       // Occurs if the fetch does not succeed
             console.error('Fetch error:', error);
             errorMessage.style.display = 'flex';
+
+            setTimeout(() => {
+                    errorMessage.style.display = 'none';
+            }, 6000);
         });
     });
 });
