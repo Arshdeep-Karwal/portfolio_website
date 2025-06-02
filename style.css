@@ -179,7 +179,7 @@ header ul a:hover{
 /* NAME TAG */
 
 .name_tag{
-    padding: clamp(2.5rem, 2vw + 2rem, 4.063rem) 0px 0px 0px;
+    padding: clamp(2.5rem, 2vw + 2rem, 4rem) 0px 0px 0px;
     display: flex;
     justify-content: center;
     color: hwb(204 78% 0%);
@@ -255,7 +255,7 @@ header ul a:hover{
 
 .about{
     margin: 0 auto;
-    padding: 50px;
+    padding: clamp(2rem, 3vw + 4rem, 8rem);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
