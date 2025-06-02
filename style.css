@@ -255,7 +255,7 @@ header ul a:hover{
 
 .about{
     margin: 0 auto;
-    padding: clamp(2rem, 3vw + 4rem, 8rem);
+    padding: clamp(2rem, 3vw + 4rem, 8rem) 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
