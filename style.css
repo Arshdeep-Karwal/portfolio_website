@@ -464,8 +464,8 @@ p{
     display: flex;
     flex: 1 1 0;
     flex-direction: column;
-    padding: 20px;
-    min-width: 245px;
+    padding: 10px;
+    min-width: 240px;
     height: auto;
     gap: clamp(0.5rem, 1vw + 0.25rem, 1.2rem);
     justify-content: space-between;
@@ -480,7 +480,7 @@ p{
     display: flex;
     flex: 1 1 0;
     flex-direction: row;
-    min-width: 210px;
+    min-width: 200px;
     max-height: fit-content;
     gap: clamp(0.5rem, 1vw + 0.25rem, 1.2rem);
     justify-content: space-between;
