@@ -480,7 +480,7 @@ p{
     display: flex;
     flex: 1 1 0;
     flex-direction: row;
-    min-width: 250px;
+    min-width: 210px;
     max-height: fit-content;
     gap: clamp(0.5rem, 1vw + 0.25rem, 1.2rem);
     justify-content: space-between;
