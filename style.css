@@ -416,7 +416,7 @@ p{
     color: rgba(255, 255, 255, 0.904);
     line-height: clamp(0.906rem, 1vw + 0.55rem, 1.219rem);
     font-weight: 490;
-    padding-inline-start: 18px;    
+    padding-inline-start: 27px;    
 }
 
 .logos{
